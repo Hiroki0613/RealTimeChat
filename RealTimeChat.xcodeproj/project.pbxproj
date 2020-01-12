@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49E10B7066F3C1741149B1EB /* Pods_RealTimeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5075868654488E73AEB02871 /* Pods_RealTimeChat.framework */; };
 		F50F9A8523CB3919005E6DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F9A8423CB3919005E6DA6 /* AppDelegate.swift */; };
 		F50F9A8723CB3919005E6DA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F9A8623CB3919005E6DA6 /* SceneDelegate.swift */; };
 		F50F9A8923CB3919005E6DA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F9A8823CB3919005E6DA6 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A7E930E1504F61980A62420 /* Pods-RealTimeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeChat.release.xcconfig"; path = "Target Support Files/Pods-RealTimeChat/Pods-RealTimeChat.release.xcconfig"; sourceTree = "<group>"; };
+		5075868654488E73AEB02871 /* Pods_RealTimeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealTimeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C004C27DAAAA87425C7A63F /* Pods-RealTimeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeChat.debug.xcconfig"; path = "Target Support Files/Pods-RealTimeChat/Pods-RealTimeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		F50F9A8123CB3919005E6DA6 /* RealTimeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50F9A8423CB3919005E6DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50F9A8623CB3919005E6DA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E10B7066F3C1741149B1EB /* Pods_RealTimeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04DAAECA06CFAFA4AA325751 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5075868654488E73AEB02871 /* Pods_RealTimeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F05DA908106680E838958E75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C004C27DAAAA87425C7A63F /* Pods-RealTimeChat.debug.xcconfig */,
+				1A7E930E1504F61980A62420 /* Pods-RealTimeChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F50F9A7823CB3919005E6DA6 = {
 			isa = PBXGroup;
 			children = (
 				F50F9A8323CB3919005E6DA6 /* RealTimeChat */,
 				F50F9A8223CB3919005E6DA6 /* Products */,
+				F05DA908106680E838958E75 /* Pods */,
+				04DAAECA06CFAFA4AA325751 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F50F9A9523CB391C005E6DA6 /* Build configuration list for PBXNativeTarget "RealTimeChat" */;
 			buildPhases = (
+				72FCECECB1B28FAECF6634B8 /* [CP] Check Pods Manifest.lock */,
 				F50F9A7D23CB3919005E6DA6 /* Sources */,
 				F50F9A7E23CB3919005E6DA6 /* Frameworks */,
 				F50F9A7F23CB3919005E6DA6 /* Resources */,
+				6D7450B5F4B06F75CF082E5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D7450B5F4B06F75CF082E5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealTimeChat/Pods-RealTimeChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealTimeChat/Pods-RealTimeChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealTimeChat/Pods-RealTimeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72FCECECB1B28FAECF6634B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealTimeChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F50F9A7D23CB3919005E6DA6 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		F50F9A9623CB391C005E6DA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C004C27DAAAA87425C7A63F /* Pods-RealTimeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		F50F9A9723CB391C005E6DA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7E930E1504F61980A62420 /* Pods-RealTimeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
