@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		49E10B7066F3C1741149B1EB /* Pods_RealTimeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5075868654488E73AEB02871 /* Pods_RealTimeChat.framework */; };
+		7F6CCCC523D3280F00615BB7 /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6CCCC423D3280F00615BB7 /* MockMessage.swift */; };
 		F50F9A8523CB3919005E6DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F9A8423CB3919005E6DA6 /* AppDelegate.swift */; };
 		F50F9A8723CB3919005E6DA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F9A8623CB3919005E6DA6 /* SceneDelegate.swift */; };
 		F50F9A8923CB3919005E6DA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50F9A8823CB3919005E6DA6 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 		1A7E930E1504F61980A62420 /* Pods-RealTimeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeChat.release.xcconfig"; path = "Target Support Files/Pods-RealTimeChat/Pods-RealTimeChat.release.xcconfig"; sourceTree = "<group>"; };
 		5075868654488E73AEB02871 /* Pods_RealTimeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealTimeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C004C27DAAAA87425C7A63F /* Pods-RealTimeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealTimeChat.debug.xcconfig"; path = "Target Support Files/Pods-RealTimeChat/Pods-RealTimeChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7F6CCCC423D3280F00615BB7 /* MockMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
 		F50F9A8123CB3919005E6DA6 /* RealTimeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50F9A8423CB3919005E6DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50F9A8623CB3919005E6DA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +58,6 @@
 				6C004C27DAAAA87425C7A63F /* Pods-RealTimeChat.debug.xcconfig */,
 				1A7E930E1504F61980A62420 /* Pods-RealTimeChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +89,7 @@
 				F50F9A8D23CB391C005E6DA6 /* Assets.xcassets */,
 				F50F9A8F23CB391C005E6DA6 /* LaunchScreen.storyboard */,
 				F50F9A9223CB391C005E6DA6 /* Info.plist */,
+				7F6CCCC423D3280F00615BB7 /* MockMessage.swift */,
 			);
 			path = RealTimeChat;
 			sourceTree = "<group>";
@@ -210,6 +212,7 @@
 				F50F9A8923CB3919005E6DA6 /* ViewController.swift in Sources */,
 				F50F9A8523CB3919005E6DA6 /* AppDelegate.swift in Sources */,
 				F50F9A8723CB3919005E6DA6 /* SceneDelegate.swift in Sources */,
+				7F6CCCC523D3280F00615BB7 /* MockMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
